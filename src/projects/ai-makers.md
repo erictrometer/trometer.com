@@ -8,11 +8,11 @@ tags:
   - social media
 duration: INSTADEEP – AI MAKERS (3×2-min)
 videos:
-  - url: https://player.vimeo.com/video/0
+  - url: https://player.vimeo.com/video/1152594729
     label: Film 1
-  - url: https://player.vimeo.com/video/0
+  - url: https://player.vimeo.com/video/1152594848
     label: Film 2
-  - url: https://player.vimeo.com/video/0
+  - url: https://player.vimeo.com/video/1152594959
     label: Film 3
 thumbnail: /images/projects/ai-makers.png
 image: /images/projects/ai-makers.png

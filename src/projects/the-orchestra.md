@@ -9,7 +9,7 @@ tags:
   - art & design
 duration: The Orchestra app for iPhone (interactive)
 videos:
-  - url: https://player.vimeo.com/video/0
+  - url: https://www.youtube.com/embed/t3FLu0Ti3cY
 thumbnail: /images/projects/the-orchestra.webp
 image: /images/projects/the-orchestra.webp
 alt: Philharmonia The Orchestra

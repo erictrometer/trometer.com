@@ -8,7 +8,7 @@ tags:
   - documentary
 duration: The Curious Desert (22-min)
 videos:
-  - url: https://player.vimeo.com/video/0
+  - url: https://player.vimeo.com/video/1115460757
 thumbnail: /images/projects/curious-desert.png
 image: /images/projects/curious-desert.png
 alt: The Curious Desert - Olafur Eliasson exhibition film

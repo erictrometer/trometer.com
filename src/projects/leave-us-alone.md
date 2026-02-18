@@ -8,7 +8,7 @@ tags:
   - art & design
 duration: ESTHETIC EDUCATION – LEAVE US ALONE (3-min)
 videos:
-  - url: https://player.vimeo.com/video/0
+  - url: https://player.vimeo.com/video/9324715
 thumbnail: /images/projects/leave-us-alone.png
 image: /images/projects/leave-us-alone.png
 alt: Esthetic Education Leave Us Alone

@@ -8,7 +8,7 @@ tags:
   - documentary
 duration: THE SOLDIER (3-min trailer) — an enduring lesson of love, hope and resilience taught through acrobatics
 videos:
-  - url: https://player.vimeo.com/video/0
+  - url: https://player.vimeo.com/video/901959377
 thumbnail: /images/projects/the-soldier.jpg
 image: /images/projects/the-soldier.jpg
 alt: Burst Pictures The Soldier documentary

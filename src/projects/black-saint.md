@@ -9,7 +9,7 @@ tags:
   - art & design
 duration: THE BLACK SAINT AND THE SINNER LADY (performance)
 videos:
-  - url: https://player.vimeo.com/video/0
+  - url: https://player.vimeo.com/video/1152810528
 thumbnail: /images/projects/black-saint.jpg
 image: /images/projects/black-saint.jpg
 alt: Clod Ensemble The Black Saint and the Sinner Lady

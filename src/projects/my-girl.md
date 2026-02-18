@@ -8,7 +8,7 @@ tags:
   - art & design
 duration: JOHNNY BARDO – MY GIRL (3-min)
 videos:
-  - url: https://player.vimeo.com/video/0
+  - url: https://player.vimeo.com/video/9324505
 thumbnail: /images/projects/my-girl.jpg
 image: /images/projects/my-girl.jpg
 alt: Johnny Bardo My Girl

@@ -9,7 +9,7 @@ tags:
   - documentary
 duration: CANADA EXPLORE with Victor Mercier (5-min)
 videos:
-  - url: https://player.vimeo.com/video/0
+  - url: https://www.youtube.com/embed/UwJnO1PZ7kU
 thumbnail: /images/projects/canada-explore.png
 image: /images/projects/canada-explore.png
 alt: TCO x Destination Canada Canada Explore

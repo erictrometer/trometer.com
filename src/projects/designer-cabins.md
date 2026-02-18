@@ -9,7 +9,7 @@ tags:
   - art & design
 duration: (3-min)
 videos:
-  - url: https://player.vimeo.com/video/0
+  - url: https://player.vimeo.com/video/1152796334
 thumbnail: /images/projects/designer-cabins.png
 image: /images/projects/designer-cabins.png
 alt: Mitsulift x Vincent Van Duysen Designer Cabins

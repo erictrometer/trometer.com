@@ -9,7 +9,7 @@ tags:
   - art & design
 duration: UNIVERSE OF SOUND (interactive)
 videos:
-  - url: https://player.vimeo.com/video/0
+  - url: https://www.youtube.com/embed/Wka8rKXTek8
 thumbnail: /images/projects/universe-of-sound.png
 image: /images/projects/universe-of-sound.png
 alt: Philharmonia Universe of Sound

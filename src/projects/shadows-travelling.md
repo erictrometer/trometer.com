@@ -8,7 +8,7 @@ tags:
   - documentary
 duration: Shadows travelling on the sea of the day (10-min)
 videos:
-  - url: https://player.vimeo.com/video/0
+  - url: https://player.vimeo.com/video/1115774894
 thumbnail: /images/projects/shadows-travelling.webp
 image: /images/projects/shadows-travelling.webp
 alt: Shadows travelling on the sea of the day

@@ -7,7 +7,7 @@ tags:
   - documentary
 duration: DETAINED UNDER HOUTHIS (27-min)
 videos:
-  - url: https://player.vimeo.com/video/0
+  - url: https://player.vimeo.com/video/688839592
 thumbnail: /images/projects/duh.jpg
 image: /images/projects/duh.jpg
 alt: Burst Pictures Detained Under Houthis
