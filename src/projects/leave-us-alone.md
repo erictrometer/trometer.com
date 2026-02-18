@@ -2,13 +2,13 @@
 title: Esthetic Education — Leave Us Alone
 slug: leave-us-alone
 order: 12
-permalink: /leave-us-alone/
 role: directing
 tags:
   - music
   - art & design
 duration: ESTHETIC EDUCATION – LEAVE US ALONE (3-min)
-embedUrl: https://player.vimeo.com/video/0
+videos:
+  - url: https://player.vimeo.com/video/0
 thumbnail: /images/projects/leave-us-alone.png
 image: /images/projects/leave-us-alone.png
 alt: Esthetic Education Leave Us Alone

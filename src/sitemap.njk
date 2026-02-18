@@ -4,15 +4,14 @@ eleventyExcludeFromCollections: true
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  {%- for item in collections.all %}
+  {%- if not item.data.eleventyExcludeFromCollections %}
   <url>
-    <loc>{{ site.url }}/</loc>
-  </url>
-  {%- for project in collections.projects %}
-  <url>
-    <loc>{{ site.url }}{{ project.url }}</loc>
-    {%- if project.date %}
-    <lastmod>{{ project.date | isoDate }}</lastmod>
+    <loc>{{ site.url }}{{ item.url }}</loc>
+    {%- if item.date %}
+    <lastmod>{{ item.date | isoDate }}</lastmod>
     {%- endif %}
   </url>
+  {%- endif %}
   {%- endfor %}
 </urlset>

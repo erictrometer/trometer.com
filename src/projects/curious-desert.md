@@ -2,13 +2,13 @@
 title: Tigerlily Productions x Studio Olafur Eliasson — The curious desert
 slug: curious-desert
 order: 1
-permalink: /curious-desert/
 role: cinematography
 tags:
   - art & design
   - documentary
 duration: The Curious Desert (22-min)
-embedUrl: https://player.vimeo.com/video/0
+videos:
+  - url: https://player.vimeo.com/video/0
 thumbnail: /images/projects/curious-desert.png
 image: /images/projects/curious-desert.png
 alt: The Curious Desert - Olafur Eliasson exhibition film

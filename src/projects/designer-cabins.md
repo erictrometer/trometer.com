@@ -2,14 +2,14 @@
 title: Mitsulift x Vincent Van Duysen — Designer Cabins
 slug: designer-cabins
 order: 2
-permalink: /designer-cabins/
 role: cinematography
 tags:
   - branding & commercial
   - social media
   - art & design
 duration: (3-min)
-embedUrl: https://player.vimeo.com/video/0
+videos:
+  - url: https://player.vimeo.com/video/0
 thumbnail: /images/projects/designer-cabins.png
 image: /images/projects/designer-cabins.png
 alt: Mitsulift x Vincent Van Duysen Designer Cabins

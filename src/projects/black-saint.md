@@ -2,14 +2,14 @@
 title: Clod Ensemble x Nu Civilisation Orchestra — The Black Saint and the Sinner Lady
 slug: black-saint
 order: 9
-permalink: /black-saint/
 role: cinematography
 tags:
   - music
   - performance
   - art & design
 duration: THE BLACK SAINT AND THE SINNER LADY (performance)
-embedUrl: https://player.vimeo.com/video/0
+videos:
+  - url: https://player.vimeo.com/video/0
 thumbnail: /images/projects/black-saint.jpg
 image: /images/projects/black-saint.jpg
 alt: Clod Ensemble The Black Saint and the Sinner Lady

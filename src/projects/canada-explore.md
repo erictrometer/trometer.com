@@ -2,14 +2,14 @@
 title: TCO x Destination Canada — Canada Explore
 slug: canada-explore
 order: 5
-permalink: /canada-explore/
 role: editing
 tags:
   - branding & commercial
   - social media
   - documentary
 duration: CANADA EXPLORE with Victor Mercier (5-min)
-embedUrl: https://player.vimeo.com/video/0
+videos:
+  - url: https://player.vimeo.com/video/0
 thumbnail: /images/projects/canada-explore.png
 image: /images/projects/canada-explore.png
 alt: TCO x Destination Canada Canada Explore

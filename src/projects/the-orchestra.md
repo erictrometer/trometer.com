@@ -2,14 +2,14 @@
 title: Philharmonia — The Orchestra
 slug: the-orchestra
 order: 11
-permalink: /the-orchestra/
 role: cinematography
 tags:
   - music
   - interactive
   - art & design
 duration: The Orchestra app for iPhone (interactive)
-embedUrl: https://player.vimeo.com/video/0
+videos:
+  - url: https://player.vimeo.com/video/0
 thumbnail: /images/projects/the-orchestra.webp
 image: /images/projects/the-orchestra.webp
 alt: Philharmonia The Orchestra

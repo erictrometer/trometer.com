@@ -2,12 +2,12 @@
 title: Burst Pictures — Detained Under Houthis
 slug: duh
 order: 8
-permalink: /duh/
 role: directing
 tags:
   - documentary
 duration: DETAINED UNDER HOUTHIS (27-min)
-embedUrl: https://player.vimeo.com/video/0
+videos:
+  - url: https://player.vimeo.com/video/0
 thumbnail: /images/projects/duh.jpg
 image: /images/projects/duh.jpg
 alt: Burst Pictures Detained Under Houthis

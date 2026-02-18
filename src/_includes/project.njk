@@ -4,20 +4,15 @@
 <article class="project mt-16 sm:mt-24">
   <h1 class="text-xl sm:text-2xl font-semibold text-gray-900 dark:text-gray-200 mb-4">{{ title }}</h1>
 
-  {# Videos — front matter formats (use one):
-     embedUrl: single URL
-     embedUrls: array of URLs (no labels)
-     videos: array of URLs or { url, label } objects #}
-  {% set videoList = { videos: videos, embedUrls: embedUrls, embedUrl: embedUrl } | normalizeVideos %}
-  {% for item in videoList %}
+  {% for video in videos %}
   <div class="mb-8">
-    {% if item.label %}
-    <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">{{ item.label }}</p>
+    {% if video.label %}
+    <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">{{ video.label }}</p>
     {% endif %}
     <div class="aspect-video w-full rounded-lg overflow-hidden bg-gray-100 dark:bg-dark-surface">
       <iframe
-        src="{{ item.url }}"
-        title="{{ item.label or title }}"
+        src="{{ video.url }}"
+        title="{{ video.label or title }}"
         class="w-full h-full"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen

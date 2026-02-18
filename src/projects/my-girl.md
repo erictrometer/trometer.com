@@ -2,13 +2,13 @@
 title: Johnny Bardo — My Girl
 slug: my-girl
 order: 13
-permalink: /my-girl/
 role: directing
 tags:
   - music
   - art & design
 duration: JOHNNY BARDO – MY GIRL (3-min)
-embedUrl: https://player.vimeo.com/video/0
+videos:
+  - url: https://player.vimeo.com/video/0
 thumbnail: /images/projects/my-girl.jpg
 image: /images/projects/my-girl.jpg
 alt: Johnny Bardo My Girl

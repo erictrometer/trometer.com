@@ -2,7 +2,6 @@
 title: InstaDeep — AI Makers
 slug: ai-makers
 order: 4
-permalink: /ai-makers/
 role: editing
 tags:
   - branding & commercial

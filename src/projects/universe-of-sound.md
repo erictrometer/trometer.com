@@ -2,14 +2,14 @@
 title: Philharmonia — Universe of Sound
 slug: universe-of-sound
 order: 10
-permalink: /universe-of-sound/
 role: cinematography
 tags:
   - music
   - interactive
   - art & design
 duration: UNIVERSE OF SOUND (interactive)
-embedUrl: https://player.vimeo.com/video/0
+videos:
+  - url: https://player.vimeo.com/video/0
 thumbnail: /images/projects/universe-of-sound.png
 image: /images/projects/universe-of-sound.png
 alt: Philharmonia Universe of Sound

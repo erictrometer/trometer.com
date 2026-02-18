@@ -35,10 +35,6 @@ content:
         label: Order
         type: number
         required: true
-      - name: permalink
-        label: Permalink
-        type: string
-        description: "URL path, e.g. /curious-desert/"
       - name: role
         label: Role
         type: select
@@ -65,15 +61,11 @@ content:
       - name: duration
         label: Duration
         type: string
-      - name: embedUrl
-        label: Video URL
-        type: string
-        description: Single video embed URL (use this OR the Videos field below)
       - name: videos
         label: Videos
         type: object
         list: true
-        description: Multiple videos with optional labels (use this OR Video URL above)
+        description: One or more video embeds with optional labels
         fields:
           - name: url
             label: URL
@@ -129,7 +121,7 @@ content:
       - name: layout
         type: string
         hidden: true
-        default: base.njk
+        default: about.njk
       - name: permalink
         type: string
         hidden: true

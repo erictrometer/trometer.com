@@ -2,13 +2,13 @@
 title: Basecamp Research — Beyond Known Biology
 slug: beyond-biology
 order: 3
-permalink: /beyond-biology/
 role: editing
 tags:
   - branding & commercial
   - social media
 duration: BEYOND KNOWN BIOLOGY (2×30-sec)
-embedUrl: https://player.vimeo.com/video/0
+videos:
+  - url: https://player.vimeo.com/video/0
 thumbnail: /images/projects/beyond-biology.png
 image: /images/projects/beyond-biology.png
 alt: Basecamp Research Beyond Known Biology promo

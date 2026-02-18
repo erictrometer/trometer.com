@@ -1,27 +1,32 @@
-<article class="project-card rounded-lg overflow-hidden border border-gray-200 bg-white transition-shadow hover:shadow-md">
-  <a href="{{ url }}" class="block group">
-    <div class="aspect-video bg-gray-100 overflow-hidden">
-      {% if thumbnail %}
+<article class="rounded-lg overflow-hidden border border-gray-200 dark:border-dark-border bg-white dark:bg-dark-surface transition-shadow hover:shadow-md dark:hover:shadow-black/50">
+  <a href="{{ projectUrl }}" class="block group">
+    <div class="aspect-video bg-gray-100 dark:bg-dark-bg overflow-hidden">
+      {% if projectThumbnail %}
       <img
-        src="{{ thumbnail }}"
-        alt="{{ alt }}"
+        src="{{ projectThumbnail }}"
+        alt="{{ projectAlt }}"
         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-        loading="lazy"
       />
       {% else %}
-      <div class="w-full h-full flex items-center justify-center text-gray-400 text-sm">
-        {{ title }}
+      <div class="w-full h-full flex items-center justify-center text-gray-400 dark:text-gray-500 text-sm p-4 text-center">
+        {{ projectTitle }}
       </div>
       {% endif %}
     </div>
     <div class="p-4">
-      <h2 class="font-medium text-gray-900 group-hover:text-gray-600 transition-colors line-clamp-2">
-        {{ title }}
+      <h2 class="font-medium text-gray-900 dark:text-gray-200 group-hover:text-gray-600 dark:group-hover:text-gray-400 transition-colors line-clamp-2">
+        {{ projectTitle }}
       </h2>
-      {% if tags and tags.length %}
-      <p class="mt-2 text-xs text-gray-500 flex flex-wrap gap-1">
-        {% for tag in tags %}
-        <span class="bg-gray-100 px-2 py-0.5 rounded">{{ tag }}</span>
+      {% set displayTags = [] %}
+      {% for tag in projectTags %}
+        {% if tag !== 'project' %}
+          {% set displayTags = (displayTags.push(tag), displayTags) %}
+        {% endif %}
+      {% endfor %}
+      {% if displayTags.length %}
+      <p class="mt-2 text-xs text-gray-500 dark:text-gray-400 flex flex-wrap gap-1">
+        {% for tag in displayTags %}
+        <span class="bg-gray-100 dark:bg-dark-bg px-2 py-0.5 rounded">{{ tag }}</span>
         {% endfor %}
       </p>
       {% endif %}

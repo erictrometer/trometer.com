@@ -4,10 +4,7 @@
   "description": "trometer.com replica built with 11ty",
   "scripts": {
     "build": "eleventy",
-    "dev": "eleventy --serve",
-    "css:build": "tailwindcss -i ./src/css/main.css -o ./_site/css/main.css",
-    "css:watch": "tailwindcss -i ./src/css/main.css -o ./_site/css/main.css --watch",
-    "start": "npm run css:build && eleventy --serve"
+    "dev": "eleventy --serve"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0",

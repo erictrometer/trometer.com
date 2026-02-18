@@ -1,13 +1,11 @@
 ---
 title: About
-layout: base.njk
+layout: about.njk
 permalink: /about/
 nav: true
 navOrder: 1
 navTitle: about
 ---
-
-<div class="prose prose-gray dark:prose-invert max-w-none mt-16 sm:mt-24 sm:columns-2 sm:gap-12">
 
 ## PROFILE
 
@@ -38,5 +36,3 @@ Adobe Premiere Pro, After Effects, Photoshop, Illustrator, Audition · Avid · D
 - BSc Broadcast Engineering – Liverpool John Moores University
 - French DUT (BSc equivalent) Electronics and Computer Science – Université de Haute Alsace Mulhouse
 - French Baccalauréat – Maths, Physics, Electronics and Mechanics
-
-</div>

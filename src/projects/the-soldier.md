@@ -2,13 +2,13 @@
 title: Burst Pictures — The Soldier
 slug: the-soldier
 order: 7
-permalink: /the-soldier/
 role: directing
 tags:
   - in-development
   - documentary
 duration: THE SOLDIER (3-min trailer) — an enduring lesson of love, hope and resilience taught through acrobatics
-embedUrl: https://player.vimeo.com/video/0
+videos:
+  - url: https://player.vimeo.com/video/0
 thumbnail: /images/projects/the-soldier.jpg
 image: /images/projects/the-soldier.jpg
 alt: Burst Pictures The Soldier documentary

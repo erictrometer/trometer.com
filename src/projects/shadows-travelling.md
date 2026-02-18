@@ -2,13 +2,13 @@
 title: Olafur Eliasson — Shadows traveling on the sea of the day
 slug: shadows-travelling
 order: 6
-permalink: /shadows-travelling/
 role: cinematography
 tags:
   - art & design
   - documentary
 duration: Shadows travelling on the sea of the day (10-min)
-embedUrl: https://player.vimeo.com/video/0
+videos:
+  - url: https://player.vimeo.com/video/0
 thumbnail: /images/projects/shadows-travelling.webp
 image: /images/projects/shadows-travelling.webp
 alt: Shadows travelling on the sea of the day
