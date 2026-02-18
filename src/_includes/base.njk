@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {%- set pageTitle %}{% if title %}{{ title }} — {% endif %}{{ site.title }}{% endset -%}
+  {%- set pageDescription = description or site.tagline -%}
+  {%- set pageUrl = site.url + page.url -%}
+  <title>{{ pageTitle }}</title>
+  <meta name="description" content="{{ pageDescription }}">
+  <link rel="canonical" href="{{ pageUrl }}">
+
+  <meta property="og:title" content="{{ pageTitle }}">
+  <meta property="og:description" content="{{ pageDescription }}">
+  <meta property="og:url" content="{{ pageUrl }}">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="{{ site.title }}">
+  {% if image %}<meta property="og:image" content="{{ site.url }}{{ image }}">{% endif %}
+
+  <meta name="twitter:card" content="{% if image %}summary_large_image{% else %}summary{% endif %}">
+  <meta name="twitter:title" content="{{ pageTitle }}">
+  <meta name="twitter:description" content="{{ pageDescription }}">
+  {% if image %}<meta name="twitter:image" content="{{ site.url }}{{ image }}">{% endif %}
+
+  <link rel="preload" href="/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/css/main.css">
+  <script>
+    (function() {
+      const stored = localStorage.getItem('theme');
+      if (stored === 'dark') document.documentElement.classList.add('dark');
+      else if (stored === 'light') document.documentElement.classList.remove('dark');
+      else if (window.matchMedia('(prefers-color-scheme: dark)').matches) document.documentElement.classList.add('dark');
+    })();
+  </script>
+</head>
+<body class="min-h-screen bg-white text-gray-900 antialiased dark:bg-dark-bg dark:text-gray-200 transition-colors">
+  {% include "header.njk" %}
+  <main class="mx-auto max-w-6xl px-4 pt-32 pb-8 sm:px-6 sm:pt-36 lg:px-8">
+    {% block content %}{{ content | safe }}{% endblock %}
+  </main>
+  {% include "footer.njk" %}
+  <script defer src="https://unpkg.com/alpinejs@3.14.0/dist/cdn.min.js"></script>
+</body>
+</html>

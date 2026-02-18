@@ -1,0 +1,151 @@
+settings:
+  content:
+    merge: true
+
+media:
+  input: src/images
+  output: /images
+  categories: [image]
+
+content:
+  - name: projects
+    label: Projects
+    type: collection
+    path: src/projects
+    filename: "{slug}.md"
+    exclude: [projects.11tydata.js]
+    view:
+      fields: [title, order, role, tags]
+      primary: title
+      sort: [order, title, date]
+      default:
+        sort: order
+        order: asc
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: slug
+        label: Slug
+        type: string
+        required: true
+        description: URL-friendly identifier used in the filename and permalink
+      - name: order
+        label: Order
+        type: number
+        required: true
+      - name: permalink
+        label: Permalink
+        type: string
+        description: "URL path, e.g. /curious-desert/"
+      - name: role
+        label: Role
+        type: select
+        required: true
+        options:
+          values:
+            - cinematography
+            - directing
+            - editing
+      - name: tags
+        label: Tags
+        type: select
+        list: true
+        options:
+          values:
+            - art & design
+            - branding & commercial
+            - documentary
+            - in-development
+            - interactive
+            - music
+            - performance
+            - social media
+      - name: duration
+        label: Duration
+        type: string
+      - name: embedUrl
+        label: Video URL
+        type: string
+        description: Single video embed URL (use this OR the Videos field below)
+      - name: videos
+        label: Videos
+        type: object
+        list: true
+        description: Multiple videos with optional labels (use this OR Video URL above)
+        fields:
+          - name: url
+            label: URL
+            type: string
+            required: true
+          - name: label
+            label: Label
+            type: string
+      - name: thumbnail
+        label: Thumbnail
+        type: image
+        required: true
+      - name: image
+        label: Image
+        type: image
+        required: true
+      - name: alt
+        label: Alt Text
+        type: string
+        required: true
+      - name: description
+        label: Description
+        type: string
+        required: true
+        options:
+          maxlength: 180
+      - name: credits
+        label: Credits
+        type: text
+        description: Supports HTML for links
+      - name: date
+        label: Date
+        type: date
+        required: true
+      - name: draft
+        label: Draft
+        type: boolean
+        default: false
+      - name: body
+        label: Body
+        type: rich-text
+
+  - name: about
+    label: About
+    type: file
+    path: src/about.md
+    fields:
+      - name: title
+        label: Title
+        type: string
+        hidden: true
+        default: About
+      - name: layout
+        type: string
+        hidden: true
+        default: base.njk
+      - name: permalink
+        type: string
+        hidden: true
+        default: /about/
+      - name: nav
+        type: boolean
+        hidden: true
+        default: true
+      - name: navOrder
+        type: number
+        hidden: true
+        default: 1
+      - name: navTitle
+        type: string
+        hidden: true
+        default: about
+      - name: body
+        label: Body
+        type: rich-text

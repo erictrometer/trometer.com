@@ -1,0 +1,70 @@
+<header id="main-header" class="fixed top-0 left-0 right-0 z-50 py-4 transition-transform duration-300 ease-out">
+  <nav class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 flex flex-col gap-4" aria-label="Main">
+    <div class="flex flex-wrap items-start justify-between gap-4">
+      <div class="flex flex-col gap-4">
+        <a href="/" class="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 transition-colors w-fit">
+          {{ site.title }}
+        </a>
+        <div class="flex flex-col gap-1 text-gray-600 dark:text-gray-400">
+          {% for item in collections.nav %}
+            <a href="{{ item.url }}" class="hover:text-gray-900 dark:hover:text-gray-200 transition-colors w-fit">
+              {{ item.data.navTitle or item.data.title }} →
+            </a>
+          {% endfor %}
+          <a href="mailto:{{ site.email }}" class="hover:text-gray-900 dark:hover:text-gray-200 transition-colors w-fit">get in touch →</a>
+        </div>
+      </div>
+      <div x-data="themeToggle">
+        <button
+          type="button"
+          @click="toggle()"
+          class="min-h-[44px] p-2 text-gray-900 dark:text-gray-200 hover:opacity-60 transition-opacity"
+          aria-label="Toggle light/dark mode"
+        >
+          <span x-show="!isDark" class="inline-block">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+          </span>
+          <span x-show="isDark" class="inline-block">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          </span>
+        </button>
+      </div>
+    </div>
+  </nav>
+</header>
+<script>
+  document.addEventListener('alpine:init', () => {
+    Alpine.data('themeToggle', () => ({
+      isDark: document.documentElement.classList.contains('dark'),
+      toggle() {
+        document.documentElement.classList.add('theme-transitioning');
+        this.isDark = !this.isDark;
+        document.documentElement.classList.toggle('dark', this.isDark);
+        localStorage.setItem('theme', this.isDark ? 'dark' : 'light');
+        setTimeout(() => document.documentElement.classList.remove('theme-transitioning'), 1000);
+      }
+    }));
+  });
+
+  (function() {
+    const header = document.getElementById('main-header');
+    let lastScrollY = window.scrollY;
+    let ticking = false;
+    function updateHeader() {
+      const scrollY = window.scrollY;
+      if (scrollY > lastScrollY && scrollY > 80) {
+        header.classList.add('-translate-y-full');
+      } else {
+        header.classList.remove('-translate-y-full');
+      }
+      lastScrollY = scrollY;
+      ticking = false;
+    }
+    window.addEventListener('scroll', function() {
+      if (!ticking) {
+        requestAnimationFrame(updateHeader);
+        ticking = true;
+      }
+    });
+  })();
+</script>

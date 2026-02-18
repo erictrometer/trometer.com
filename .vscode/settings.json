@@ -1,0 +1,8 @@
+{
+  "files.associations": {
+    "*.njk": "nunjucks"
+  },
+  "[nunjucks]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}

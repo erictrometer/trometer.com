@@ -1,0 +1,30 @@
+<article class="project-card rounded-lg overflow-hidden border border-gray-200 bg-white transition-shadow hover:shadow-md">
+  <a href="{{ url }}" class="block group">
+    <div class="aspect-video bg-gray-100 overflow-hidden">
+      {% if thumbnail %}
+      <img
+        src="{{ thumbnail }}"
+        alt="{{ alt }}"
+        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+        loading="lazy"
+      />
+      {% else %}
+      <div class="w-full h-full flex items-center justify-center text-gray-400 text-sm">
+        {{ title }}
+      </div>
+      {% endif %}
+    </div>
+    <div class="p-4">
+      <h2 class="font-medium text-gray-900 group-hover:text-gray-600 transition-colors line-clamp-2">
+        {{ title }}
+      </h2>
+      {% if tags and tags.length %}
+      <p class="mt-2 text-xs text-gray-500 flex flex-wrap gap-1">
+        {% for tag in tags %}
+        <span class="bg-gray-100 px-2 py-0.5 rounded">{{ tag }}</span>
+        {% endfor %}
+      </p>
+      {% endif %}
+    </div>
+  </a>
+</article>

@@ -1,0 +1,46 @@
+{% extends "base.njk" %}
+
+{% block content %}
+<article class="project mt-16 sm:mt-24">
+  <h1 class="text-xl sm:text-2xl font-semibold text-gray-900 dark:text-gray-200 mb-4">{{ title }}</h1>
+
+  {# Videos — front matter formats (use one):
+     embedUrl: single URL
+     embedUrls: array of URLs (no labels)
+     videos: array of URLs or { url, label } objects #}
+  {% set videoList = { videos: videos, embedUrls: embedUrls, embedUrl: embedUrl } | normalizeVideos %}
+  {% for item in videoList %}
+  <div class="mb-8">
+    {% if item.label %}
+    <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">{{ item.label }}</p>
+    {% endif %}
+    <div class="aspect-video w-full rounded-lg overflow-hidden bg-gray-100 dark:bg-dark-surface">
+      <iframe
+        src="{{ item.url }}"
+        title="{{ item.label or title }}"
+        class="w-full h-full"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </div>
+  {% endfor %}
+
+  {% if duration or role %}
+  <div class="mb-6 text-sm text-gray-600 dark:text-gray-400 space-y-1">
+    {% if duration %}<p>{{ duration }}</p>{% endif %}
+    {% if role %}<p>my role: {{ role }}</p>{% endif %}
+  </div>
+  {% endif %}
+
+  <div class="prose prose-gray dark:prose-invert max-w-none mb-8">
+    {{ content | safe }}
+  </div>
+
+  {% if credits %}
+  <div class="text-sm text-gray-600 dark:text-gray-400 border-t border-gray-200 dark:border-dark-border pt-6 [&_a]:text-gray-900 dark:[&_a]:text-gray-200 [&_a]:underline [&_a]:hover:opacity-80">
+    {{ credits | safe }}
+  </div>
+  {% endif %}
+</article>
+{% endblock %}
